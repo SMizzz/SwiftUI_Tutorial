@@ -12,6 +12,7 @@
 		028A8FEF2702DDE800B29A9F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 028A8FEE2702DDE800B29A9F /* Assets.xcassets */; };
 		028A8FF22702DDE800B29A9F /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 028A8FF12702DDE800B29A9F /* Preview Assets.xcassets */; };
 		028A8FFB270305A900B29A9F /* MyVstackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 028A8FFA270305A900B29A9F /* MyVstackView.swift */; };
+		028A8FFD27030C4A00B29A9F /* MyTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 028A8FFC27030C4A00B29A9F /* MyTextView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,6 +22,7 @@
 		028A8FEE2702DDE800B29A9F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		028A8FF12702DDE800B29A9F /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		028A8FFA270305A900B29A9F /* MyVstackView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyVstackView.swift; sourceTree = "<group>"; };
+		028A8FFC27030C4A00B29A9F /* MyTextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyTextView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +58,7 @@
 				028A8FEA2702DDE700B29A9F /* SwiftUI_Tutorial__1App.swift */,
 				028A8FEC2702DDE700B29A9F /* ContentView.swift */,
 				028A8FFA270305A900B29A9F /* MyVstackView.swift */,
+				028A8FFC27030C4A00B29A9F /* MyTextView.swift */,
 				028A8FEE2702DDE800B29A9F /* Assets.xcassets */,
 				028A8FF02702DDE800B29A9F /* Preview Content */,
 			);
@@ -141,6 +144,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				028A8FED2702DDE700B29A9F /* ContentView.swift in Sources */,
+				028A8FFD27030C4A00B29A9F /* MyTextView.swift in Sources */,
 				028A8FEB2702DDE700B29A9F /* SwiftUI_Tutorial__1App.swift in Sources */,
 				028A8FFB270305A900B29A9F /* MyVstackView.swift in Sources */,
 			);
