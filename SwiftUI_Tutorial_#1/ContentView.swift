@@ -18,9 +18,9 @@ struct ContentView: View {
     NavigationView {
       VStack {
         HStack {
-          MyVstackView()
-          MyVstackView()
-          MyVstackView()
+          MyVstackView(isActivated: $isActivated)
+          MyVstackView(isActivated: $isActivated)
+          MyVstackView(isActivated: $isActivated)
         }
         .padding(isActivated ? 50.0 : 20.0)
         
@@ -36,7 +36,7 @@ struct ContentView: View {
             self.isActivated.toggle()
           }
         } // Hstack
-        NavigationLink(destination: MyTextView()) {
+        NavigationLink(destination: MyTextView(isActivated: $isActivated)) {
           Text("네비게이션")
             .font(.system(size: 40))
             .fontWeight(.bold)
@@ -46,12 +46,8 @@ struct ContentView: View {
             .cornerRadius(30)
         }.padding(.top, 50)
       }
-      
     }
-    
   }
-  
-  
 }
 
 struct ContentView_Previews: PreviewProvider {

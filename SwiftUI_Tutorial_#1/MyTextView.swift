@@ -9,6 +9,15 @@ import SwiftUI
 
 struct MyTextView: View {
   
+  // Data를 연동시킨다.
+  @Binding
+  var isActivated: Bool
+  
+  // 생성자
+  init(isActivated: Binding<Bool> = .constant(false)) {
+    _isActivated = isActivated
+  }
+  
   @State
   private var index: Int = 0
   
@@ -27,14 +36,17 @@ struct MyTextView: View {
       Text("배경 아이템 인덱스 \(self.index)")
         .font(.system(size: 30))
         .fontWeight(.bold)
-        .frame(minWidth: 0, idealWidth: 150, maxWidth: .infinity, minHeight: 0, idealHeight: 350, maxHeight: .infinity, alignment: .center)
+        .frame(minWidth: 0, idealWidth: 150, maxWidth: .infinity, minHeight: 0, idealHeight: 50, maxHeight: 50, alignment: .center)
+      Text("활성화 상태: \(String(isActivated))")
+        .font(.system(size: 30))
+        .fontWeight(.bold)
+        .foregroundColor(self.isActivated ? Color.yellow : Color.gray)
+        .background(Color.black)
       Spacer()
-      
     }
     .background(backgroundColors[index])
     .edgesIgnoringSafeArea(.all)
     .onTapGesture {
-      print("배경아이템이 클릭되었다.")
       if (self.index == self.backgroundColors.count - 1) {
         self.index = 0
       } else {
